@@ -1,6 +1,7 @@
 .Numbers {
-  width: 100%;
+  width: 75%;
   display: block;
+  
   ul {
     list-style-type: none;
     display: block;
@@ -8,11 +9,57 @@
     li {
       padding: 10px;
       width: 30%;
+      @media(min-width: 650px) and (max-width: 850px) {
+        width: 29%;
+      }
       display: inline-block;
       div {
         padding: 60px 0;
-        color: #ffffff;
+        color: $white;
         font-size: 50px;
+        user-select: none;
+        &.color-6F98A8 {
+          background-color: $card-color-1;
+        }
+        &.color-2B8EAD {
+          background-color: $card-color-2;
+        }
+        &.color-2F454E {
+          background-color: $card-color-3;
+        }
+        &.color-BFBFBF {
+          background-color: $card-color-4;
+        }
+      }
+    }
+  }
+  @media(max-width: $device-pixel) {
+    width: 100%;
+    ul {
+      padding: 0 20px;
+      li {
+        width: 100%;
+        padding: 10px 0;
+        div {
+          padding: 10px 0;
+          color: $black;
+          &.color-6F98A8 {
+            background-color: $card-mobile-color;
+            border-left: 20px solid $card-color-1;
+          }
+          &.color-2B8EAD {
+            background-color: $card-mobile-color;
+            border-left: 20px solid $card-color-2;
+          }
+          &.color-2F454E {
+            background-color: $card-mobile-color;
+            border-left: 20px solid $card-color-3;
+          }
+          &.color-BFBFBF {
+            background-color: $card-mobile-color;
+            border-left: 20px solid $card-color-4;
+          }
+        }
       }
     }
   }

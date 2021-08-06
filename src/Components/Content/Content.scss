@@ -1,7 +1,10 @@
 .Content {
   display: flex;
   flex-direction: row;
-  .Numbers {
-    flex-grow: 3;
+  @media(max-width: $device-pixel) {
+    flex-direction: column-reverse;
+  }
+  @media(min-width: $large-device) {
+    margin: 0 100px;
   }
 }
