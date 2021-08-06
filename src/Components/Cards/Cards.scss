@@ -1,4 +1,4 @@
-.Numbers {
+.cards-container {
   width: 75%;
   display: block;
   
@@ -9,7 +9,7 @@
     li {
       padding: 10px;
       width: 30%;
-      @media(min-width: 650px) and (max-width: 850px) {
+      @media(min-width: $device-pixel) and (max-width: $device-tablet-pixel) {
         width: 29%;
       }
       display: inline-block;
@@ -43,6 +43,7 @@
         div {
           padding: 10px 0;
           color: $black;
+          font-size: 25px;
           &.color-6F98A8 {
             background-color: $card-mobile-color;
             border-left: 20px solid $card-color-1;

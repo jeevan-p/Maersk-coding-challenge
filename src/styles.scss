@@ -3,12 +3,12 @@
 body {
   margin: 0;
 }
-.App {
+.app {
   font-family: sans-serif;
   text-align: center;
 }
 
 @import "./Components/Header/Header";
 @import "./Components/Content/Content";
-@import "./Components/Numbers/Numbers";
+@import "./Components/Cards/Cards";
 @import "./Components/Buttons/Buttons";

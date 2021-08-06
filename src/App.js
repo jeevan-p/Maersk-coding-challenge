@@ -1,16 +1,21 @@
+import { useState } from "react";
+// Component imports
 import Header from "./Components/Header/Header.jsx";
 import Content from "./Components/Content/Content.jsx";
-import Numbers from "./Components/Numbers/Numbers.jsx";
+import Numbers from "./Components/Cards/Cards.jsx";
 import Buttons from "./Components/Buttons/Buttons.jsx";
-import "./styles.scss";
-import content from "./data.json";
+// Util and content imports
 import shuffleFunction from "./Utils/shuffle";
-import { useState } from "react";
+import content from "./data.json";
+// Style import
+import "./styles.scss";
 
 export default function App() {
+  // State holding current array
   const [numberArrayState, setNumberArrayState] = useState(content.array);
+
   return (
-    <div className="App">
+    <div className="app">
       <Header text={content.headerText} />
       <Content>
         <Numbers
