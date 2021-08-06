@@ -7,7 +7,7 @@
     display: block;
     padding: 0;
     li {
-      padding: 10px;
+      padding: 0;
       width: 30%;
       @media(min-width: $device-pixel) and (max-width: $device-tablet-pixel) {
         width: 29%;
@@ -16,7 +16,7 @@
       div {
         padding: 60px 0;
         color: $white;
-        font-size: 50px;
+        font-size: 100px;
         user-select: none;
         &.color-6F98A8 {
           background-color: $card-color-1;

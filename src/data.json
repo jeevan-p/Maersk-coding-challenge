@@ -15,5 +15,6 @@
   "buttonTexts": {
     "shuffleButtonText": "SHUFFLE",
     "sortButtonText": "SORT"
-  }
+  },
+  "footerText": "Shuffle and sort by Jeevan"
 }

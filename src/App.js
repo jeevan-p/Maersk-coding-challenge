@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header.jsx";
 import Content from "./Components/Content/Content.jsx";
 import Numbers from "./Components/Cards/Cards.jsx";
 import Buttons from "./Components/Buttons/Buttons.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
 // Util and content imports
 import shuffleFunction from "./Utils/shuffle";
 import content from "./data.json";
@@ -30,6 +31,7 @@ export default function App() {
           buttonTexts={content.buttonTexts}
         />
       </Content>
+      <Footer textToDisplay={content.footerText} />
     </div>
   );
 }
