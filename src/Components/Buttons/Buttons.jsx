@@ -1,14 +1,17 @@
 export default function Content(props) {
   return (
-    <div className="Buttons">
+    <div className="buttons-container">
       <div>
-        <button onClick={props.shuffleClicked}>
-          {props.buttonTexts.shuffleButtonText}
+        <button
+          className="button shuffle-button"
+          onClick={props.shuffleClicked}
+        >
+          {props.buttonTexts && props.buttonTexts.shuffleButtonText}
         </button>
       </div>
       <div>
-        <button onClick={props.sortClicked}>
-          {props.buttonTexts.sortButtonText}
+        <button className="button sort-button" onClick={props.sortClicked}>
+          {props.buttonTexts && props.buttonTexts.sortButtonText}
         </button>
       </div>
     </div>
