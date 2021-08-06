@@ -1,4 +1,4 @@
-$device-pixel: 650px;
+@import './vars';
 
 body {
   margin: 0;
@@ -7,3 +7,8 @@ body {
   font-family: sans-serif;
   text-align: center;
 }
+
+@import "./Components/Header/Header";
+@import "./Components/Content/Content";
+@import "./Components/Numbers/Numbers";
+@import "./Components/Buttons/Buttons";

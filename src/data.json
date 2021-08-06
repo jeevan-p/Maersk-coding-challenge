@@ -1,0 +1,19 @@
+{
+  "headerText": "Shuffle and Sort",
+  "array": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "tileColor": [
+    "6F98A8",
+    "2B8EAD",
+    "2F454E",
+    "2B8EAD",
+    "2F454E",
+    "BFBFBF",
+    "BFBFBF",
+    "6F98A8",
+    "2F454E"
+  ],
+  "buttonTexts": {
+    "shuffleButtonText": "SHUFFLE",
+    "sortButtonText": "SORT"
+  }
+}
