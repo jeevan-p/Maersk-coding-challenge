@@ -1,0 +1,7 @@
+.Content {
+  display: flex;
+  flex-direction: row;
+  .Numbers {
+    flex-grow: 3;
+  }
+}
